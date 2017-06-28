@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.qinlangchan.custom.custom.HorizontalProgressbarWithProgress
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:progress_text_color="@android:color/holo_red_light"
+            app:progress_reach_color="@android:color/holo_red_light"
+            app:progress_text_size="14sp"
+            app:progress_unreach_color="@android:color/black"
+            android:progress="30"
+            android:padding="15dp"
+            android:layout_marginTop="30dp"/>
+        <com.qinlangchan.custom.custom.RoundProgressbarWithProgress
+            android:id="@+id/circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:progress_text_size="28sp"
+            app:progress_text_color="@android:color/holo_red_light"
+            android:progress="30"
+            app:radius="50dp"
+            app:progress_reach_color="@android:color/holo_red_light"
+            app:progress_unreach_color="@android:color/darker_gray"/>
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="increase"
+            android:onClick="increase"/>-->
+    </LinearLayout>
+
+</ScrollView>

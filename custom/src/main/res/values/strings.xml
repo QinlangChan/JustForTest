@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Custom</string>
+    <string name="restart">再来一局</string>
+    <string name="undo">悔棋</string>
+
+    <string name="str_recorder_normal">按住 说话</string>
+    <string name="str_recorder_recording">松开 结束</string>
+    <string name="str_recorder_cancel">松开手指，取消发送</string>
+
+</resources>

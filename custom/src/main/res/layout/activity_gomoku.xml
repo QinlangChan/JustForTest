@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/panel_bg"
+    tools:context="com.qinlangchan.custom.com.qinlangchan.custome.GomokuActivity">
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/activity_horizontal_padding"
+        android:layout_marginEnd="@dimen/button_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restart"
+        android:onClick="restart"/>
+
+    <Button
+        android:id="@+id/undo"
+        android:layout_toStartOf="@id/restart"
+        android:layout_alignTop="@id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/undo"
+        android:onClick="undo"/>
+
+    <com.qinlangchan.custom.custom.GomokuView
+        android:id="@+id/gomoku_view"
+        android:layout_below="@id/restart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="@dimen/indicator_width"
+        android:layout_height="@dimen/indicator_width"
+        android:layout_above="@id/gomoku_view"
+        android:layout_marginStart="@dimen/activity_horizontal_padding"
+        android:scaleType="centerInside" />
+
+</RelativeLayout>
